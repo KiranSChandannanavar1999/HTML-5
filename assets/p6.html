@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <P>This tag is used to specify the additional details on the web page thaat the user can view or hide on deamnd.</P>
+    </center>
+    <hr>
+
+    <center>
+        <h3>This is SUMMARY TAG</h3>
+        <p>The <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend for the content of a details element.</p>
+    </center>
+    <hr>
+
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, mollitia maxime numquam possimus fuga exercitationem voluptate inventore quia officiis ipsa non laboriosam aut officia nihil, dignissimos sed nesciunt, alias illo.</p>
+     </details>
+     
+     <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero earum consequatur voluptatibus, repudiandae laborum? Repudiandae expedita pariatur, et itaque odio qui facilis! Maxime, libero. Natus repellendus beatae quo autem?</p>
+     </details>
+
+     <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est labore quia aliquid voluptate! Minima corrupti, rem hic ea amet consectetur, debitis incidunt numquam nihil error architecto, libero facere itaque quasi?</P>
+     </details>
+
+     <br><hr><br>
+
+     <center>
+        <h3>TIME TAG</h3>
+        <p> <b>HTML time</b> tag is used to define date and time. it displays time value in a 24 hour clock or precise date in a grogarian calendar in HTML.</p>
+     </center>
+     <hr>
+
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aperiam necessitatibus sint dolore eveniet labore quaerat inventore hic, 2:30 PM minima praesentium optio ipsa, nisi delectus, facere qui molestias beatae facilis veniam?</p>
+
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.<time>2:30 pm</time> Nesciunt cumque, rem saepe quibusdam accusantium quas labore id libero facere excepturi tenetur explicabo facilis dignissimos quo qui beatae odio repellendus in?</P>
+
+     <br><hr><br>
+
+     <hr>
+     <center>
+        <h3>This is DIALOG TAG</h3>
+        <p><b>( This tag to create a new popup dialog on a web page.</b></p>
+     </center>
+     <hr>
+
+    <dialog id="dd">
+        <buutton id="closeDialog">&times;</buutton>
+        <h1>FULLSTACK</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita veritatis quam debitis, exercitationem dignissimos consequatur beatae aut rem illum nemo quisquam modi autem optio quidem impedit id tempora laudantium delectus.</p>
+    </dialog>
+
+    <button type="button" id="openDialog"></button>Open Dialog Tag</button>
+
+    <script>
+        document.getElementById("openDialog").onclick = function(){
+            document.getElementById("dd").show();
+        }
+        document.getElementById("closeDialog").onclick = function(){
+            document.getElementById("dd").close();
+        }
+    </script>
+</body>
+</html>
